@@ -14,12 +14,22 @@
         "url": "https://github.com/samthekd/magento2-code-snippets-vscode.git"
     },
     "engines": {
-        "vscode": "*"
+        "vscode": "^1.32.0"
     },
     "categories": [
         "Snippets"
     ],
+    "activationEvents": [
+        "onCommand:m2.moduleFunctions"
+    ],
+    "main": "./out/extension.js",
     "contributes": {
+        "commands": [
+            {
+                "command": "m2.moduleFunctions",
+                "title": "Magento 2 Module Functions"
+            }
+        ],
         "snippets": [
             {
                 "language": "xml",
@@ -30,5 +40,20 @@
                 "path": "./snippets/php/snippets.json"
             }
         ]
-    }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -watch -p ./",
+        "lint": "eslint . --ext .ts,.tsx",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.0",
+        "@types/vscode": "^1.32.0",
+        "@typescript-eslint/eslint-plugin": "^4.16.0",
+        "@typescript-eslint/parser": "^4.16.0",
+        "eslint": "^7.21.0",
+        "typescript": "^4.3.2"
+    },
+    "dependencies": {}
 }
