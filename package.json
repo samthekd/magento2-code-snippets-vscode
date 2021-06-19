@@ -1,0 +1,34 @@
+{
+    "name": "magento2-code-snippets",
+    "displayName": "Magento 2 Code Snippets",
+    "description": "Magento 2 Code Sinppets for VS Code",
+    "version": "1.0.0",
+    "publisher": "samthekd",
+    "icon": "images/icon.jpg",
+    "bugs": {
+        "url": "https://github.com/samthekd/magento2-code-snippets-vscode/issues"
+    },
+    "homepage": "https://github.com/samthekd/magento2-code-snippets-vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/samthekd/magento2-code-snippets-vscode.git"
+    },
+    "engines": {
+        "vscode": "*"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "xml",
+                "path": "./snippets/xml/snippets.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/php/snippets.json"
+            }
+        ]
+    }
+}
