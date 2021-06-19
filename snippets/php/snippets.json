@@ -1,0 +1,14 @@
+{
+    "M2 Registration File": {
+		"prefix": "m2.registration",
+		"body": [
+            "\\Magento\\Framework\\Component\\ComponentRegistrar::register(",
+            "\t\\Magento\\Framework\\Component\\ComponentRegistrar::MODULE,",
+            "\t'${1:Vendor_Module}',",
+            "\t__DIR__",
+            ");",
+            ""
+		],
+		"description": "Magento 2 Registration File"
+	}
+}

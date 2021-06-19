@@ -1,0 +1,93 @@
+{
+    "M2 Routes Frontend": {
+		"prefix": "m2.routes.frontend",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<config xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"urn:magento:framework:App/etc/routes.xsd\">",
+			"\t<router id=\"standard\">",
+			"\t\t<route id=\"routeName\" frontName=\"routeName\">",
+			"\t\t\t<module name=\"Vendor_Module\"/>",
+			"\t\t</route>",
+			"\t</router>",
+			"</config>"
+		],
+		"description": "Magento 2 Routes file for Frontend"
+	},
+    "M2 Routes Adminhtml": {
+		"prefix": "m2.routes.adminhtml",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<config xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"urn:magento:framework:App/etc/routes.xsd\">",
+			"\t<router id=\"admin\">",
+			"\t\t<route id=\"routeName\" frontName=\"routeName\">",
+			"\t\t\t<module name=\"Vendor_Module\"/>",
+			"\t\t</route>",
+			"\t</router>",
+			"</config>"
+		],
+		"description": "Magento 2 Routes file for Adminhtml"
+	},
+    "M2 Config File": {
+		"prefix": "m2.config",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<config xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"urn:magento:module:Magento_Store:etc/config.xsd\">",
+			"\t<default>",
+			"\t\t$0",
+			"\t</default>",
+			"</config>"
+		],
+		"description": "Magento 2 Config file"
+	},
+	"M2 Module File": {
+		"prefix": "m2.module",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<config xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"urn:magento:framework:Module/etc/module.xsd\">",
+			"\t<module name=\"${1:Vendor_Module}\"/>",
+			"</config>"
+		],
+		"description": "Magento 2 Module file"
+	},
+	"M2 Layout File": {
+		"prefix": "m2.layout",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<page xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"urn:magento:framework:View/Layout/etc/page_configuration.xsd\">",
+			"\t$0",
+			"</page>"
+		],
+		"description": "Magento 2 Layout file"
+	},
+	"M2 Event File": {
+		"prefix": "m2.event",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<config xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"urn:magento:framework:Event/etc/events.xsd\">",
+			"\t$0",
+			"</config>"
+		],
+		"description": "Magento 2 Event file"
+	},
+	"M2 CronTab File": {
+		"prefix": "m2.crontab",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<config xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"urn:magento:module:Magento_Cron:etc/crontab.xsd\">",
+			"\t<group id=\"default\">",
+			"\t\t$0",
+			"\t</group>",
+			"</config>"
+		],
+		"description": "Magento 2 CronTab file"
+	},
+	"M2 Dependency Injection File": {
+		"prefix": "m2.di",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<config xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"urn:magento:framework:ObjectManager/etc/config.xsd\">",
+			"</config>"
+		],
+		"description": "Magento 2 Dependency Injection file"
+	}
+}
