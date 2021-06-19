@@ -1,0 +1,1 @@
+# magento2-code-snippets-vscode
